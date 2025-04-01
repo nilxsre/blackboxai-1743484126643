@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .hero-section {
+            background-image: url('https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold"><i class="fas fa-book-open mr-2"></i>Study Tracker</h1>
+            <nav class="space-x-4">
+                <a href="syllabus.html" class="px-4 py-2 rounded hover:bg-blue-700 transition"><i class="fas fa-list-alt mr-1"></i>Syllabus</a>
+                <a href="timetable.html" class="px-4 py-2 rounded hover:bg-blue-700 transition"><i class="fas fa-calendar-alt mr-1"></i>Timetable</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section py-32 text-white">
+        <div class="container mx-auto text-center backdrop-blur-sm bg-black/30 p-8 rounded-lg">
+            <h2 class="text-4xl font-bold mb-4">Plan Your Academic Success</h2>
+            <p class="text-xl mb-6">Organize your studies with our comprehensive Syllabus and Timetable tools</p>
+            <div class="flex justify-center space-x-4">
+                <a href="syllabus.html" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition">View Syllabus</a>
+                <a href="timetable.html" class="bg-blue-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-600 transition">View Timetable</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="text-blue-500 text-4xl mb-4"><i class="fas fa-book"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Syllabus Tracking</h3>
+                    <p class="text-gray-600">Organize all your subjects and topics in one place with progress tracking.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="text-blue-500 text-4xl mb-4"><i class="fas fa-calendar-check"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Study Schedule</h3>
+                    <p class="text-gray-600">Create and manage your weekly study timetable with color coding.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="text-blue-500 text-4xl mb-4"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Progress Analytics</h3>
+                    <p class="text-gray-600">Visualize your study progress and identify areas needing more attention.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2023 Study Tracker. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
