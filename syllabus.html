@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus - Study Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold"><i class="fas fa-book-open mr-2"></i>Study Tracker</h1>
+            <nav class="space-x-4">
+                <a href="index.html" class="px-4 py-2 rounded hover:bg-blue-700 transition"><i class="fas fa-home mr-1"></i>Home</a>
+                <a href="timetable.html" class="px-4 py-2 rounded hover:bg-blue-700 transition"><i class="fas fa-calendar-alt mr-1"></i>Timetable</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto py-8 px-4">
+        <div class="flex justify-between items-center mb-8">
+            <h2 class="text-3xl font-bold">Course Syllabus</h2>
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg">
+                <i class="fas fa-plus mr-2"></i>Add Subject
+            </button>
+        </div>
+
+        <!-- Syllabus Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Subject Card 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+                <div class="h-40 bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center">
+                    <i class="fas fa-square-root-alt text-white text-6xl"></i>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Mathematics</h3>
+                    <div class="flex items-center text-gray-500 mb-3">
+                        <i class="fas fa-clock mr-2"></i>
+                        <span>12 Weeks</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Algebra, Calculus, Geometry, Trigonometry, and Statistics concepts.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm font-medium text-blue-500">In Progress (60%)</span>
+                        <div class="w-1/2 bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subject Card 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+                <div class="h-40 bg-gradient-to-r from-green-400 to-green-600 flex items-center justify-center">
+                    <i class="fas fa-atom text-white text-6xl"></i>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Physics</h3>
+                    <div class="flex items-center text-gray-500 mb-3">
+                        <i class="fas fa-clock mr-2"></i>
+                        <span>10 Weeks</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Mechanics, Thermodynamics, Electromagnetism, and Modern Physics.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm font-medium text-green-500">Completed (100%)</span>
+                        <div class="w-1/2 bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-green-600 h-2.5 rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subject Card 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+                <div class="h-40 bg-gradient-to-r from-purple-400 to-purple-600 flex items-center justify-center">
+                    <i class="fas fa-flask text-white text-6xl"></i>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Chemistry</h3>
+                    <div class="flex items-center text-gray-500 mb-3">
+                        <i class="fas fa-clock mr-2"></i>
+                        <span>8 Weeks</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Organic, Inorganic, and Physical Chemistry fundamentals.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm font-medium text-purple-500">Not Started (0%)</span>
+                        <div class="w-1/2 bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-purple-600 h-2.5 rounded-full" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subject Card 4 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+                <div class="h-40 bg-gradient-to-r from-red-400 to-red-600 flex items-center justify-center">
+                    <i class="fas fa-dna text-white text-6xl"></i>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Biology</h3>
+                    <div class="flex items-center text-gray-500 mb-3">
+                        <i class="fas fa-clock mr-2"></i>
+                        <span>6 Weeks</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Cell Biology, Genetics, Evolution, and Ecology concepts.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm font-medium text-red-500">In Progress (30%)</span>
+                        <div class="w-1/2 bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-red-600 h-2.5 rounded-full" style="width: 30%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subject Card 5 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+                <div class="h-40 bg-gradient-to-r from-yellow-400 to-yellow-600 flex items-center justify-center">
+                    <i class="fas fa-globe-americas text-white text-6xl"></i>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">History</h3>
+                    <div class="flex items-center text-gray-500 mb-3">
+                        <i class="fas fa-clock mr-2"></i>
+                        <span>4 Weeks</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">World History, Ancient Civilizations, and Modern Events.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm font-medium text-yellow-500">In Progress (45%)</span>
+                        <div class="w-1/2 bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-yellow-600 h-2.5 rounded-full" style="width: 45%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add New Subject Card -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition border-2 border-dashed border-gray-300 flex items-center justify-center">
+                <div class="text-center p-6">
+                    <i class="fas fa-plus-circle text-4xl text-gray-400 mb-2"></i>
+                    <p class="text-gray-500">Add New Subject</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2023 Study Tracker. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
