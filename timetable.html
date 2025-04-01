@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable - Study Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .time-cell {
+            min-width: 80px;
+        }
+        .subject-cell {
+            min-width: 120px;
+            height: 80px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold"><i class="fas fa-book-open mr-2"></i>Study Tracker</h1>
+            <nav class="space-x-4">
+                <a href="index.html" class="px-4 py-2 rounded hover:bg-blue-700 transition"><i class="fas fa-home mr-1"></i>Home</a>
+                <a href="syllabus.html" class="px-4 py-2 rounded hover:bg-blue-700 transition"><i class="fas fa-list-alt mr-1"></i>Syllabus</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto py-8 px-4">
+        <div class="flex justify-between items-center mb-8">
+            <h2 class="text-3xl font-bold">Weekly Timetable</h2>
+            <div class="flex space-x-2">
+                <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg">
+                    <i class="fas fa-plus mr-2"></i>Add Session
+                </button>
+                <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded-lg">
+                    <i class="fas fa-print mr-2"></i>Print
+                </button>
+            </div>
+        </div>
+
+        <!-- Timetable -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="overflow-x-auto">
+                <table class="w-full">
+                    <thead class="bg-blue-600 text-white">
+                        <tr>
+                            <th class="time-cell py-4 px-6 text-left">Time</th>
+                            <th class="subject-cell py-4 px-6">Monday</th>
+                            <th class="subject-cell py-4 px-6">Tuesday</th>
+                            <th class="subject-cell py-4 px-6">Wednesday</th>
+                            <th class="subject-cell py-4 px-6">Thursday</th>
+                            <th class="subject-cell py-4 px-6">Friday</th>
+                            <th class="subject-cell py-4 px-6">Saturday</th>
+                            <th class="subject-cell py-4 px-6">Sunday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- 8 AM -->
+                        <tr class="border-b border-gray-200">
+                            <td class="time-cell py-4 px-6 bg-gray-50 font-medium">8:00 AM</td>
+                            <td class="subject-cell py-4 px-6 bg-blue-50">
+                                <div class="bg-blue-100 p-2 rounded">
+                                    <p class="font-medium">Mathematics</p>
+                                    <p class="text-sm text-blue-600">Lecture</p>
+                                </div>
+                            </td>
+                            <td class="subject-cell py-4 px-6"></td>
+                            <td class="subject-cell py-4 px-6 bg-green-50">
+                                <div class="bg-green-100 p-2 rounded">
+                                    <p class="font-medium">Physics</p>
+                                    <p class="text-sm text-green-600">Lab</p>
+                                </div>
+                            </td>
+                            <td class="subject-cell py-4 px-6"></td>
+                            <td class="subject-cell py-4 px-6 bg-blue-50">
+                                <div class="bg-blue-100 p-2 rounded">
+                                    <p class="font-medium">Mathematics</p>
+                                    <p class="text-sm text-blue-600">Tutorial</p>
+                                </div>
+                            </td>
+                            <td class="subject-cell py-4 px-6"></td>
+                            <td class="subject-cell py-4 px-6"></td>
+                        </tr>
+
+                        <!-- 9 AM -->
+                        <tr class="border-b border-gray-200">
+                            <td class="time-cell py-4 px-6 bg-gray-50 font-medium">9:00 AM</td>
+                            <td class="subject-cell py-4 px-6"></td>
+                            <td class="subject-cell py-4 px-6 bg-purple-50">
+                                <div class="bg-purple-100 p-2 rounded">
+                                    <p class="font-medium">Chemistry</p>
+                                    <p class="text-sm text-purple-600">Lecture</p>
+                                </div>
+                            </td>
+                            <td class="subject-cell py-4 px-6"></td>
+                            <td class="subject-cell py-4 px-6 bg-red-50">
+                                <div class="bg-red-100 p-2 rounded">
+                                    <p class="font-medium">Biology</p>
+                                    <p class="text-sm text-red-600">Lecture</p>
+                                </div>
+                            </td>
+                            <td class="subject-cell py-4 px-6"></td>
+                            <td class="subject-cell py-4 px-6"></td>
+                            <td class="subject-cell py-4 px-6"></td>
+                        </tr>
+
+                        <!-- 10 AM -->
+                        <tr class="border-b border-gray-200">
+                            <td class="time-cell py-4 px-6 bg-gray-50 font-medium">10:00 AM</td>
+                            <td class="subject-cell py-4 px-6 bg-yellow-50">
+                                <div class="bg-yellow-100 p-2 rounded">
+                                    <p class="font-medium">History</p>
+                                    <p class="text-sm text-yellow-600">Lecture</p>
+                                </div>
+                            </td>
+                            <td class="subject-cell py-4 px-6"></td>
+                            <td class="subject-cell py-4 px-6 bg-green-50">
+                                <div class="bg-green-100 p-2 rounded">
+                                    <p class="font-medium">Physics</p>
+                                    <p class="text-sm text-green-600">Lecture</p>
+                                </div>
+                            </td>
+                            <td class="subject-cell py-4 px-6"></td>
+                            <td class="subject-cell py-4 px-6 bg-purple-50">
+                                <div class="bg-purple-100 p-2 rounded">
+                                    <p class="font-medium">Chemistry</p>
+                                    <p class="text-sm text-purple-600">Lab</p>
+                                </div>
+                            </td>
+                            <td class="subject-cell py-4 px-6"></td>
+                            <td class="subject-cell py-4 px-6"></td>
+                        </tr>
+
+                        <!-- 11 AM -->
+                        <tr class="border-b border-gray-200">
+                            <td class="time-cell py-4 px-6 bg-gray-50 font-medium">11:00 AM</td>
+                            <td class="subject-cell py-4 px-6"></td>
+                            <td class="subject-cell py-4 px-6"></td>
+                            <td class="subject-cell py-4 px-6"></td>
+                            <td class="subject-cell py-4 px-6"></td>
+                            <td class="subject-cell py-4 px-6"></td>
+                            <td class="subject-cell py-4 px-6"></td>
+                            <td class="subject-cell py-4 px-6"></td>
+                        </tr>
+
+                        <!-- 12 PM -->
+                        <tr class="border-b border-gray-200">
+                            <td class="time-cell py-4 px-6 bg-gray-50 font-medium">12:00 PM</td>
+                            <td class="subject-cell py-4 px-6 bg-gray-100 text-center text-gray-500" colspan="7">
+                                Lunch Break
+                            </td>
+                        </tr>
+
+                        <!-- 1 PM -->
+                        <tr class="border-b border-gray-200">
+                            <td class="time-cell py-4 px-6 bg-gray-50 font-medium">1:00 PM</td>
+                            <td class="subject-cell py-4 px-6"></td>
+                            <td class="subject-cell py-4 px-6 bg-red-50">
+                                <div class="bg-red-100 p-2 rounded">
+                                    <p class="font-medium">Biology</p>
+                                    <p class="text-sm text-red-600">Lab</p>
+                                </div>
+                            </td>
+                            <td class="subject-cell py-4 px-6"></td>
+                            <td class="subject-cell py-4 px-6 bg-blue-50">
+                                <div class="bg-blue-100 p-2 rounded">
+                                    <p class="font-medium">Mathematics</p>
+                                    <p class="text-sm text-blue-600">Problem Solving</p>
+                                </div>
+                            </td>
+                            <td class="subject-cell py-4 px-6"></td>
+                            <td class="subject-cell py-4 px-6"></td>
+                            <td class="subject-cell py-4 px-6"></td>
+                        </tr>
+
+                        <!-- 2 PM -->
+                        <tr class="border-b border-gray-200">
+                            <td class="time-cell py-4 px-6 bg-gray-50 font-medium">2:00 PM</td>
+                            <td class="subject-cell py-4 px-6"></td>
+                            <td class="subject-cell py-4 px-6"></td>
+                            <td class="subject-cell py-4 px-6 bg-yellow-50">
+                                <div class="bg-yellow-100 p-2 rounded">
+                                    <p class="font-medium">History</p>
+                                    <p class="text-sm text-yellow-600">Discussion</p>
+                                </div>
+                            </td>
+                            <td class="subject-cell py-4 px-6"></td>
+                            <td class="subject-cell py-4 px-6"></td>
+                            <td class="subject-cell py-4 px-6"></td>
+                            <td class="subject-cell py-4 px-6"></td>
+                        </tr>
+
+                        <!-- 3 PM -->
+                        <tr class="border-b border-gray-200">
+                            <td class="time-cell py-4 px-6 bg-gray-50 font-medium">3:00 PM</td>
+                            <td class="subject-cell py-4 px-6"></td>
+                            <td class="subject-cell py-4 px-6"></td>
+                            <td class="subject-cell py-4 px-6"></td>
+                            <td class="subject-cell py-4 px-6"></td>
+                            <td class="subject-cell py-4 px-6"></td>
+                            <td class="subject-cell py-4 px-6"></td>
+                            <td class="subject-cell py-4 px-6"></td>
+                        </tr>
+
+                        <!-- 4 PM -->
+                        <tr class="border-b border-gray-200">
+                            <td class="time-cell py-4 px-6 bg-gray-50 font-medium">4:00 PM</td>
+                            <td class="subject-cell py-4 px-6 bg-gray-50 text-center text-gray-500" colspan="7">
+                                Self Study / Free Time
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2023 Study Tracker. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
